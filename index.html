@@ -1,0 +1,469 @@
+<!DOCTYPE html>
+<html lang="id" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portal Refreshment Induksi Keselamatan Fuel Operations</title>
+
+    <!-- Tailwind CSS CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+
+    <!-- FontAwesome 6 CDN -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+
+    <!-- Google Fonts: Plus Jakarta Sans & Inter -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800;900&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        brand: {
+                            50: '#fff1f2',
+                            100: '#ffe4e6',
+                            200: '#fecdd3',
+                            500: '#ef4444',
+                            600: '#dc2626',
+                            700: '#b91c1c',
+                            800: '#991b1b',
+                            900: '#7f1d1d',
+                            950: '#450a0a',
+                        },
+                        corporate: {
+                            dark: '#0f172a',
+                            surface: '#ffffff',
+                            muted: '#64748b',
+                        }
+                    },
+                    fontFamily: {
+                        sans: ['Plus Jakarta Sans', 'Inter', 'sans-serif'],
+                    },
+                    boxShadow: {
+                        'card-subtle': '0 4px 20px -2px rgba(185, 28, 28, 0.08), 0 2px 6px -1px rgba(0, 0, 0, 0.04)',
+                        'card-hover': '0 16px 32px -6px rgba(185, 28, 28, 0.16), 0 8px 16px -4px rgba(0, 0, 0, 0.06)',
+                        'red-glow': '0 8px 25px -4px rgba(185, 28, 28, 0.35)',
+                    }
+                }
+            }
+        }
+    </script>
+
+    <style>
+        /* Smooth Scroll & Corporate Scrollbar */
+        html { scroll-behavior: smooth; }
+        ::-webkit-scrollbar { width: 7px; }
+        ::-webkit-scrollbar-track { background: #f8fafc; }
+        ::-webkit-scrollbar-thumb { background: #b91c1c; border-radius: 4px; }
+        ::-webkit-scrollbar-thumb:hover { background: #991b1b; }
+
+        /* Corporate Glass Header Backdrop */
+        .glass-header {
+            background: rgba(255, 255, 255, 0.94);
+            backdrop-filter: blur(12px);
+            -webkit-backdrop-filter: blur(12px);
+        }
+
+        /* Micro Interactive Animations */
+        .portal-card {
+            transition: all 0.28s cubic-bezier(0.16, 1, 0.3, 1);
+        }
+        .portal-card:hover {
+            transform: translateY(-4px);
+        }
+
+        .btn-action {
+            transition: all 0.2s cubic-bezier(0.16, 1, 0.3, 1);
+        }
+        .btn-action:active {
+            transform: scale(0.97);
+        }
+
+        /* Custom Subtle Red Gradient Stripes */
+        .brand-top-stripe {
+            background: linear-gradient(90deg, #7f1d1d 0%, #b91c1c 40%, #dc2626 70%, #991b1b 100%);
+        }
+        
+        .hero-gradient-overlay {
+            background: linear-gradient(180deg, rgba(15, 23, 42, 0.88) 0%, rgba(127, 29, 29, 0.94) 100%);
+        }
+    </style>
+</head>
+<body class="bg-slate-100/80 text-slate-800 font-sans antialiased min-h-screen flex flex-col justify-between selection:bg-brand-700 selection:text-white">
+
+    <!-- TOP CORPORATE RED STRIPE -->
+    <div class="h-1.5 w-full brand-top-stripe sticky top-0 z-50"></div>
+
+    <!-- MAIN CORPORATE NAVBAR -->
+    <header class="w-full glass-header border-b border-slate-200/80 sticky top-1.5 z-40 shadow-sm">
+        <div class="max-w-2xl mx-auto px-4 py-3 flex items-center justify-between">
+            
+            <!-- Company / Division Brand -->
+            <div class="flex items-center space-x-3">
+                <div class="w-10 h-10 rounded-xl bg-gradient-to-br from-brand-700 to-brand-900 text-white flex items-center justify-center text-lg font-black shadow-md shadow-brand-900/20">
+                    <i class="fa-solid fa-shield-halved"></i>
+                </div>
+                <div>
+                    <div class="flex items-center gap-2">
+                        <span class="font-extrabold text-slate-900 text-sm tracking-tight uppercase">HSSE <span class="text-brand-700">FUEL LOGISTICS</span></span>
+                    </div>
+                    <p class="text-[11px] text-slate-500 font-medium">Portal Induksi & Refreshment Keselamatan</p>
+                </div>
+            </div>
+
+        </div>
+    </header>
+
+    <!-- CONTAINER WRAPPER (LINKTREE STYLE CENTERED PORTAL) -->
+    <main class="w-full max-w-2xl mx-auto px-4 py-6 space-y-5 flex-grow">
+
+        <!-- HERO BANNER CARD WITH REAL OPERATIONAL PHOTO -->
+        <section class="relative rounded-2xl overflow-hidden shadow-card-subtle bg-slate-900 border border-slate-200">
+            <!-- Unsplash Industrial Fuel Truck / Refinery Photo -->
+            <img src="https://images.unsplash.com/photo-1542314831-068cd1dbfeeb?q=80&w=1200&auto=format&fit=crop" 
+                 alt="Fuel Operations HSSE" 
+                 class="w-full h-52 sm:h-60 object-cover object-center filter brightness-90">
+            
+            <div class="absolute inset-0 hero-gradient-overlay flex flex-col justify-end p-5 sm:p-6 text-white">
+                <div class="space-y-2">
+                    <div class="inline-flex items-center gap-2 bg-brand-700/90 backdrop-blur-md border border-white/20 text-white text-[10px] font-extrabold px-3 py-1 rounded-md uppercase tracking-wider">
+                        <i class="fa-solid fa-truck-droplet text-amber-300"></i>
+                        <span>STANDAR INDUKSI OPERASIONAL FUEL</span>
+                    </div>
+
+                    <h1 class="text-xl sm:text-2xl font-black tracking-tight leading-snug text-white">
+                        Refreshment Induksi Keselamatan
+                    </h1>
+
+                    <p class="text-xs sm:text-sm text-slate-200 leading-relaxed font-normal max-w-xl">
+                        Wajib dilaksanakan periodik oleh <span class="font-bold text-white underline decoration-brand-500 underline-offset-2">Fuelman</span> dan <span class="font-bold text-white underline decoration-brand-500 underline-offset-2">Operator Fuel Truck Transportir</span>.
+                    </p>
+                </div>
+            </div>
+        </section>
+
+        <!-- 3-STEP FLOW GUIDE BAR -->
+        <section class="bg-white rounded-xl border border-slate-200 p-3.5 shadow-sm">
+            <div class="flex items-center justify-between mb-2.5 px-1">
+                <span class="text-[11px] font-extrabold text-slate-500 uppercase tracking-wider flex items-center gap-1.5">
+                    <i class="fa-solid fa-list-check text-brand-700"></i> Alur Penyelesaian Induksi
+                </span>
+                <span class="text-[10px] text-brand-800 bg-brand-50 font-bold px-2 py-0.5 rounded border border-brand-200">3 Tahapan Mudah</span>
+            </div>
+            
+            <div class="grid grid-cols-3 gap-2 text-center text-xs font-medium">
+                <div class="flex flex-col items-center p-2 rounded-lg bg-slate-50 border border-slate-100">
+                    <div class="w-6 h-6 rounded-full bg-brand-700 text-white font-black flex items-center justify-center text-xs mb-1">
+                        1
+                    </div>
+                    <span class="text-slate-800 font-bold text-[11px]">Materi SOP</span>
+                </div>
+                <div class="flex flex-col items-center p-2 rounded-lg bg-slate-50 border border-slate-100">
+                    <div class="w-6 h-6 rounded-full bg-brand-700 text-white font-black flex items-center justify-center text-xs mb-1">
+                        2
+                    </div>
+                    <span class="text-slate-800 font-bold text-[11px]">Soal Kuis</span>
+                </div>
+                <div class="flex flex-col items-center p-2 rounded-lg bg-slate-50 border border-slate-100">
+                    <div class="w-6 h-6 rounded-full bg-brand-700 text-white font-black flex items-center justify-center text-xs mb-1">
+                        3
+                    </div>
+                    <span class="text-slate-800 font-bold text-[11px]">Upload Form</span>
+                </div>
+            </div>
+        </section>
+
+        <!-- ========================================================================= -->
+        <!-- THE 3 PRIMARY PORTAL LINK CARDS (GANTI LINK HREF DI BAWAH SESUAI KEBUTUHAN) -->
+        <!-- ========================================================================= -->
+        <section class="space-y-3.5">
+
+            <!-- --------------------------------------------------------------------- -->
+            <!-- CARD 1: DOCUMENT & MATERI INDUKSI -->
+            <!-- GANTI URL GOOGLE DRIVE / PDF DI HREF="https://drive.google.com" -->
+            <!-- --------------------------------------------------------------------- -->
+            <div class="portal-card bg-white rounded-2xl border border-slate-200/90 shadow-card-subtle hover:shadow-card-hover hover:border-brand-500/40 overflow-hidden relative group">
+                <div class="p-4 sm:p-5 flex flex-col sm:flex-row items-start sm:items-center justify-between gap-4">
+                    
+                    <!-- Image Thumbnail & Details -->
+                    <div class="flex items-center space-x-3.5">
+                        <div class="w-16 h-16 sm:w-20 sm:h-20 rounded-xl overflow-hidden shrink-0 border border-slate-200 bg-slate-100 relative shadow-inner">
+                            <img src="https://images.unsplash.com/photo-1504307651254-35680f356dfd?q=80&w=400&auto=format&fit=crop" 
+                                 alt="Materi Safety Induction Fuel" 
+                                 class="w-full h-full object-cover group-hover:scale-105 transition duration-500">
+                            <div class="absolute inset-0 bg-brand-950/20"></div>
+                            <span class="absolute bottom-1 right-1 bg-brand-800 text-white text-[8px] font-black px-1.5 py-0.5 rounded uppercase tracking-wider">
+                                PDF / DOC
+                            </span>
+                        </div>
+
+                        <div class="space-y-1">
+                            <div class="flex items-center gap-2">
+                                <span class="bg-brand-100 text-brand-800 text-[10px] font-black px-2 py-0.5 rounded tracking-wider uppercase border border-brand-200">
+                                    LANGKAH 01
+                                </span>
+                                <span class="text-[11px] font-bold text-slate-500">Modul Pembelajaran</span>
+                            </div>
+                            
+                            <h2 class="text-base sm:text-lg font-extrabold text-slate-900 group-hover:text-brand-700 transition">
+                                Document & Materi Induksi
+                            </h2>
+                            
+                            <p class="text-xs text-slate-500 leading-relaxed font-medium line-clamp-2">
+                                SOP Grounding & Bonding, Penggunaan APD/FRC, P2H Fuel Truck, & Penanganan Tumpahan BBM.
+                            </p>
+                        </div>
+                    </div>
+
+                    <!-- Action Buttons Cluster -->
+                    <div class="w-full sm:w-auto flex items-center justify-end gap-2 pt-3 sm:pt-0 border-t sm:border-t-0 border-slate-100">
+                        <!-- Quick Copy Link Button -->
+                        <button onclick="copyPortalLink('https://drive.google.com', 'Materi Induksi')" 
+                                title="Salin Link Tautan" 
+                                class="p-3 rounded-xl bg-slate-100 hover:bg-brand-50 text-slate-600 hover:text-brand-700 transition border border-slate-200 shrink-0">
+                            <i class="fa-regular fa-copy text-sm"></i>
+                        </button>
+
+                        <!-- PRIMARY ACTION LINK (GANTI LINK TARUHAN ANDA DI HREF) -->
+                        <a href="https://drive.google.com" 
+                           target="_blank" 
+                           rel="noopener noreferrer" 
+                           class="btn-action flex-1 sm:flex-initial inline-flex items-center justify-center gap-2 bg-brand-700 hover:bg-brand-800 text-white font-extrabold text-xs sm:text-sm px-5 py-3 rounded-xl shadow-md shadow-brand-900/20 hover:shadow-red-glow">
+                            <span>Buka Dokumen</span>
+                            <i class="fa-solid fa-arrow-up-right-from-square text-xs"></i>
+                        </a>
+                    </div>
+
+                </div>
+            </div>
+
+            <!-- --------------------------------------------------------------------- -->
+            <!-- CARD 2: SOAL REFRESH COMPETENCY -->
+            <!-- GANTI URL GOOGLE FORMS / QUIZ DI HREF="https://forms.google.com" -->
+            <!-- --------------------------------------------------------------------- -->
+            <div class="portal-card bg-white rounded-2xl border border-slate-200/90 shadow-card-subtle hover:shadow-card-hover hover:border-brand-500/40 overflow-hidden relative group">
+                <div class="p-4 sm:p-5 flex flex-col sm:flex-row items-start sm:items-center justify-between gap-4">
+                    
+                    <!-- Image Thumbnail & Details -->
+                    <div class="flex items-center space-x-3.5">
+                        <div class="w-16 h-16 sm:w-20 sm:h-20 rounded-xl overflow-hidden shrink-0 border border-slate-200 bg-slate-100 relative shadow-inner">
+                            <img src="https://images.unsplash.com/photo-1581092335397-9583fe92d232?q=80&w=400&auto=format&fit=crop" 
+                                 alt="Kuis Evaluasi Competency Fuelman" 
+                                 class="w-full h-full object-cover group-hover:scale-105 transition duration-500">
+                            <div class="absolute inset-0 bg-brand-950/20"></div>
+                            <span class="absolute bottom-1 right-1 bg-amber-600 text-white text-[8px] font-black px-1.5 py-0.5 rounded uppercase tracking-wider">
+                                KUIS ONLINE
+                            </span>
+                        </div>
+
+                        <div class="space-y-1">
+                            <div class="flex items-center gap-2">
+                                <span class="bg-brand-100 text-brand-800 text-[10px] font-black px-2 py-0.5 rounded tracking-wider uppercase border border-brand-200">
+                                    LANGKAH 02
+                                </span>
+                                <span class="text-[11px] font-bold text-amber-700 bg-amber-50 px-2 py-0.5 rounded border border-amber-200">
+                                    Evaluasi Wajib
+                                </span>
+                            </div>
+                            
+                            <h2 class="text-base sm:text-lg font-extrabold text-slate-900 group-hover:text-brand-700 transition">
+                                Soal Refresh Competency
+                            </h2>
+                            
+                            <p class="text-xs text-slate-500 leading-relaxed font-medium line-clamp-2">
+                                Evaluasi pemahaman prosedur operasional aman, pemadaman APAR, & tindakan darurat.
+                            </p>
+                        </div>
+                    </div>
+
+                    <!-- Action Buttons Cluster -->
+                    <div class="w-full sm:w-auto flex items-center justify-end gap-2 pt-3 sm:pt-0 border-t sm:border-t-0 border-slate-100">
+                        <!-- Quick Copy Link Button -->
+                        <button onclick="copyPortalLink('https://forms.google.com', 'Kuis Competency')" 
+                                title="Salin Link Tautan" 
+                                class="p-3 rounded-xl bg-slate-100 hover:bg-brand-50 text-slate-600 hover:text-brand-700 transition border border-slate-200 shrink-0">
+                            <i class="fa-regular fa-copy text-sm"></i>
+                        </button>
+
+                        <!-- PRIMARY ACTION LINK (GANTI LINK TARUHAN ANDA DI HREF) -->
+                        <a href="https://forms.google.com" 
+                           target="_blank" 
+                           rel="noopener noreferrer" 
+                           class="btn-action flex-1 sm:flex-initial inline-flex items-center justify-center gap-2 bg-brand-700 hover:bg-brand-800 text-white font-extrabold text-xs sm:text-sm px-5 py-3 rounded-xl shadow-md shadow-brand-900/20 hover:shadow-red-glow">
+                            <span>Mulai Soal Kuis</span>
+                            <i class="fa-solid fa-arrow-up-right-from-square text-xs"></i>
+                        </a>
+                    </div>
+
+                </div>
+            </div>
+
+            <!-- --------------------------------------------------------------------- -->
+            <!-- CARD 3: UPLOAD DAFTAR HADIR / FORM SELESAI REFRESHMENT -->
+            <!-- GANTI URL UPLOAD FORM DI HREF="https://forms.google.com" -->
+            <!-- --------------------------------------------------------------------- -->
+            <div class="portal-card bg-white rounded-2xl border border-slate-200/90 shadow-card-subtle hover:shadow-card-hover hover:border-brand-500/40 overflow-hidden relative group">
+                <div class="p-4 sm:p-5 flex flex-col sm:flex-row items-start sm:items-center justify-between gap-4">
+                    
+                    <!-- Image Thumbnail & Details -->
+                    <div class="flex items-center space-x-3.5">
+                        <div class="w-16 h-16 sm:w-20 sm:h-20 rounded-xl overflow-hidden shrink-0 border border-slate-200 bg-slate-100 relative shadow-inner">
+                            <img src="https://images.unsplash.com/photo-1450133064473-71024230f91b?q=80&w=400&auto=format&fit=crop" 
+                                 alt="Upload Form Presensi Induksi" 
+                                 class="w-full h-full object-cover group-hover:scale-105 transition duration-500">
+                            <div class="absolute inset-0 bg-brand-950/20"></div>
+                            <span class="absolute bottom-1 right-1 bg-emerald-700 text-white text-[8px] font-black px-1.5 py-0.5 rounded uppercase tracking-wider">
+                                UPLOAD
+                            </span>
+                        </div>
+
+                        <div class="space-y-1">
+                            <div class="flex items-center gap-2">
+                                <span class="bg-brand-100 text-brand-800 text-[10px] font-black px-2 py-0.5 rounded tracking-wider uppercase border border-brand-200">
+                                    LANGKAH 03
+                                </span>
+                                <span class="text-[11px] font-bold text-emerald-800 bg-emerald-50 px-2 py-0.5 rounded border border-emerald-200">
+                                    Tahap Akhir
+                                </span>
+                            </div>
+                            
+                            <h2 class="text-base sm:text-lg font-extrabold text-slate-900 group-hover:text-brand-700 transition">
+                                Upload Daftar Hadir & Form Selesai
+                            </h2>
+                            
+                            <p class="text-xs text-slate-500 leading-relaxed font-medium line-clamp-2">
+                                Unggah foto/scan lembar presensi fisik & lembar komitmen keselamatan yang ditandatangani.
+                            </p>
+                        </div>
+                    </div>
+
+                    <!-- Action Buttons Cluster -->
+                    <div class="w-full sm:w-auto flex items-center justify-end gap-2 pt-3 sm:pt-0 border-t sm:border-t-0 border-slate-100">
+                        <!-- Quick Copy Link Button -->
+                        <button onclick="copyPortalLink('https://forms.google.com', 'Form Upload Presensi')" 
+                                title="Salin Link Tautan" 
+                                class="p-3 rounded-xl bg-slate-100 hover:bg-brand-50 text-slate-600 hover:text-brand-700 transition border border-slate-200 shrink-0">
+                            <i class="fa-regular fa-copy text-sm"></i>
+                        </button>
+
+                        <!-- PRIMARY ACTION LINK (GANTI LINK TARUHAN ANDA DI HREF) -->
+                        <a href="https://forms.google.com" 
+                           target="_blank" 
+                           rel="noopener noreferrer" 
+                           class="btn-action flex-1 sm:flex-initial inline-flex items-center justify-center gap-2 bg-brand-700 hover:bg-brand-800 text-white font-extrabold text-xs sm:text-sm px-5 py-3 rounded-xl shadow-md shadow-brand-900/20 hover:shadow-red-glow">
+                            <span>Upload Form</span>
+                            <i class="fa-solid fa-arrow-up-right-from-square text-xs"></i>
+                        </a>
+                    </div>
+
+                </div>
+            </div>
+
+        </section>
+
+        <!-- HSSE MANDATORY CHECKLIST BANNER -->
+        <section class="bg-gradient-to-br from-brand-950 via-brand-900 to-slate-900 rounded-2xl p-4 text-white shadow-md border border-brand-800/80">
+            <div class="flex items-start space-x-3.5">
+                <div class="w-10 h-10 rounded-xl bg-brand-700/90 text-amber-300 flex items-center justify-center text-lg shrink-0 mt-0.5 border border-brand-500/30">
+                    <i class="fa-solid fa-triangle-exclamation"></i>
+                </div>
+                <div class="space-y-1">
+                    <h3 class="text-xs font-extrabold uppercase tracking-wider text-amber-300">
+                        Pengingat HSSE: Operasional Fuel Safe Standard
+                    </h3>
+                    <p class="text-xs text-slate-200 leading-relaxed font-normal">
+                        Pastikan penjepit <span class="font-bold text-white underline">Grounding & Bonding</span> terpasang sempurna sebelum proses bongkar/muat BBM. Selalu gunakan APD FRC lengkap & lakukan P2H unit secara rutin.
+                    </p>
+                </div>
+            </div>
+        </section>
+
+        <!-- SUPPORT & CONTACT WIDGET -->
+        <section class="bg-white rounded-2xl border border-slate-200 p-4 shadow-sm space-y-3">
+            <div class="flex items-center justify-between">
+                <span class="text-xs font-extrabold text-slate-800 uppercase tracking-wider flex items-center gap-1.5">
+                    <i class="fa-solid fa-headset text-brand-700"></i> Layanan Bantuan & Support HSSE
+                </span>
+                <span class="text-[10px] bg-slate-100 text-slate-600 font-bold px-2 py-0.5 rounded">Siaga Bantuan</span>
+            </div>
+
+            <div class="grid grid-cols-1 gap-2.5">
+                <!-- WhatsApp Support Link -->
+                <a href="https://wa.me/6281234567890?text=Halo%20Admin%20HSSE,%20saya%20butuh%20bantuan%20mengenai%20Refreshment%20Induksi%20Fuel" 
+                   target="_blank" 
+                   class="flex items-center justify-between p-3 rounded-xl bg-slate-50 hover:bg-slate-100 border border-slate-200 transition group">
+                    <div class="flex items-center space-x-3">
+                        <div class="w-8 h-8 rounded-lg bg-emerald-100 text-emerald-700 flex items-center justify-center text-base font-bold">
+                            <i class="fa-brands fa-whatsapp"></i>
+                        </div>
+                        <div class="text-left">
+                            <p class="text-xs font-extrabold text-slate-800">Admin HSSE Support</p>
+                            <p class="text-[10px] text-slate-500">Bantuan Pesan WhatsApp</p>
+                        </div>
+                    </div>
+                    <i class="fa-solid fa-chevron-right text-xs text-slate-400 group-hover:text-slate-700 transition"></i>
+                </a>
+            </div>
+        </section>
+
+    </main>
+
+    <!-- FOOTER -->
+    <footer class="w-full bg-slate-900 border-t border-slate-800 py-6 text-center text-slate-400 text-xs mt-4">
+        <div class="max-w-2xl mx-auto px-4 space-y-2">
+            <div class="flex items-center justify-center space-x-2">
+                <div class="w-5 h-5 rounded bg-brand-700 text-white flex items-center justify-center font-bold text-xs">
+                    <i class="fa-solid fa-shield"></i>
+                </div>
+                <span class="font-extrabold text-white text-xs tracking-wider uppercase">HSSE FUEL SAFETY EXCELLENCE</span>
+            </div>
+            <p class="text-[11px] text-slate-500">
+                &copy; 2026 Portal Induksi Keselamatan Penyaluran BBM & Operasional Transportir Fuel Truck.
+            </p>
+        </div>
+    </footer>
+
+    <!-- FLOATING TOAST NOTIFICATION -->
+    <div id="toast" class="fixed bottom-6 left-1/2 -translate-x-1/2 bg-slate-900 text-white text-xs font-bold px-4 py-3 rounded-xl shadow-2xl border border-brand-500/50 flex items-center gap-2.5 opacity-0 pointer-events-none transition-all duration-300 z-50">
+        <i class="fa-solid fa-circle-check text-emerald-400 text-sm"></i>
+        <span id="toast-message">Link tautan berhasil disalin!</span>
+    </div>
+
+    <!-- SCRIPT LOGIC -->
+    <script>
+        function copyPortalLink(urlText, linkTitle) {
+            // ExecCommand compatibility fallback for iframe and web view environments
+            const dummyArea = document.createElement('textarea');
+            document.body.appendChild(dummyArea);
+            dummyArea.value = urlText;
+            dummyArea.select();
+            
+            try {
+                document.execCommand('copy');
+                triggerToastNotification(`Link ${linkTitle} berhasil disalin!`);
+            } catch (error) {
+                triggerToastNotification('Gagal menyalin link.');
+            } finally {
+                document.body.removeChild(dummyArea);
+            }
+        }
+
+        function triggerToastNotification(messageText) {
+            const toastElement = document.getElementById('toast');
+            const toastMsgElement = document.getElementById('toast-message');
+            
+            toastMsgElement.textContent = messageText;
+            toastElement.classList.remove('opacity-0', 'pointer-events-none');
+            toastElement.classList.add('opacity-100', 'translate-y-0');
+
+            setTimeout(() => {
+                toastElement.classList.remove('opacity-100', 'translate-y-0');
+                toastElement.classList.add('opacity-0', 'pointer-events-none');
+            }, 2500);
+        }
+    </script>
+
+</body>
+</html>
